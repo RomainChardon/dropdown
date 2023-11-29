@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dropdown</title>
+</head>
+<body>
+    <style>
+        body {
+            background: #bbbbbb;
+        }
+
+        .dropdown {
+            background: #fff;
+            width: 150px;
+            padding: 15px;
+        }
+
+        .dropdown-content {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .dropdown-item {
+            display: flex;
+            height: 300px;
+            overflow: auto;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .show {
+            display: flex;
+        }
+    </style>
+
+    <div class="dropdown">
+        <div class="dropdown-title" onclick="showDropdown();">
+            <span>Select element</span>
+        </div>
+        <div class="dropdown-content">
+            <input type="text" name="searchElement" id="searchElement" class="searchElement" onkeyup="filterElement();">
+            <div class="dropdown-item">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="dropdown.js"></script>
+
+</body>
+</html>
