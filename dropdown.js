@@ -1,3 +1,10 @@
+window.onclick = function(event) {
+    if (!event.target.matches('.adresse-content') && !event.target.matches('#tier_address')) {
+        const container = document.querySelector('.adresse-content');
+        container.innerHTML = '';
+    }
+}
+
 makeElement(50);
 
 function makeElement(nbElement) {
